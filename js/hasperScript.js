@@ -117,7 +117,7 @@ var pagesArray = [
   pageYouLost, pageHighScore, pageAbout, pageSplash
 ]
 openSoundBoard=function () {
-  window.location.href = 'JavaScriptDrumKit/index-FINISHED.html';
+  window.location.href = 'Board/index-FINISHED.html';
 }
 // show/hide pages if the checkbox is checked
 togglePage = function(pageToggle, page) {
