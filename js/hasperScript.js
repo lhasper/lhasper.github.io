@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Do after the document fully loaded
 });
 
-
+function openSoundBoard() {
+  window.location.href = 'JavaScriptDrumKit/index-FINISHED.html';
+}
 // ===============================================================
 // ================== SHOW/HIDE PAGES - ADMIN ====================
 // ===============================================================
