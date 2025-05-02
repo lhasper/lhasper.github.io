@@ -117,7 +117,7 @@ var pagesArray = [
   pageYouLost, pageHighScore, pageAbout, pageSplash
 ]
 openSoundBoard=function () {
-  window.location.href = 'Board/sbIndexFINISHED.html';
+  window.location.href = 'Board/sbIndex.html';
 }
 // show/hide pages if the checkbox is checked
 togglePage = function(pageToggle, page) {
