@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Do after the document fully loaded
 });
 
-function openSoundBoard() {
-  window.location.href = 'JavaScriptDrumKit/index-FINISHED.html';
-}
+
 // ===============================================================
 // ================== SHOW/HIDE PAGES - ADMIN ====================
 // ===============================================================
@@ -45,6 +43,9 @@ var gmStatsTotalTapCount = document.querySelector('#gmStatsTotalTapCount');
 var pageGameMenu = document.querySelector('#pageGameMenu');
 // --
 var newGameBtn = document.querySelector('#newGameBtn');
+var soundBoardBtn = document.querySelector('#soundBoardBtn');
+
+
 var highScoresBtn = document.querySelector('#highScoresBtn');
 var aboutBtn = document.querySelector('#aboutBtn');
 
@@ -115,7 +116,9 @@ var pagesArray = [
   pagePauseMenu, pageLevelPassed,
   pageYouLost, pageHighScore, pageAbout, pageSplash
 ]
-
+openSoundBoard=function () {
+  window.location.href = 'JavaScriptDrumKit/index-FINISHED.html';
+}
 // show/hide pages if the checkbox is checked
 togglePage = function(pageToggle, page) {
   if (pageToggle.checked) {
@@ -736,6 +739,7 @@ aboutBtn.addEventListener('click', function() {
   toolsBox.hidePage(pageGameMenu);
   toolsBox.pageAbout.moveCredits(); // animate the credits in the about page
 }, false);
+
 
 
 
